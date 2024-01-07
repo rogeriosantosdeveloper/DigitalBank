@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gerin\\Documents\\PROGRAMMING\\DigitalBank\\DigitalBank\\DigitalBank.csproj": {}
+    "C:\\Users\\Rogerio\\Documents\\PROGRAMMING\\DigitalBank\\DigitalBank\\DigitalBank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gerin\\Documents\\PROGRAMMING\\DigitalBank\\DigitalBank\\DigitalBank.csproj": {
+    "C:\\Users\\Rogerio\\Documents\\PROGRAMMING\\DigitalBank\\DigitalBank\\DigitalBank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerin\\Documents\\PROGRAMMING\\DigitalBank\\DigitalBank\\DigitalBank.csproj",
+        "projectUniqueName": "C:\\Users\\Rogerio\\Documents\\PROGRAMMING\\DigitalBank\\DigitalBank\\DigitalBank.csproj",
         "projectName": "DigitalBank",
-        "projectPath": "C:\\Users\\gerin\\Documents\\PROGRAMMING\\DigitalBank\\DigitalBank\\DigitalBank.csproj",
-        "packagesPath": "C:\\Users\\gerin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerin\\Documents\\PROGRAMMING\\DigitalBank\\DigitalBank\\obj\\",
+        "projectPath": "C:\\Users\\Rogerio\\Documents\\PROGRAMMING\\DigitalBank\\DigitalBank\\DigitalBank.csproj",
+        "packagesPath": "C:\\Users\\Rogerio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rogerio\\Documents\\PROGRAMMING\\DigitalBank\\DigitalBank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gerin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rogerio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

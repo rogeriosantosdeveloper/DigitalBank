@@ -3,9 +3,9 @@
     internal class Bank
     {
         private string _name;
-        private string _initialmoney;
-        public int AcNumber {  get; private set; }
-        public double Balance { get; private set; }
+        public string InitialName { get; }
+        public int AcNumber {  get; set; }
+        public double Balance { get; set; }
 
         private const int FixTax = 5;
 
@@ -15,10 +15,9 @@
 
         }
 
-        public Bank (string name, int acnumber, string initialMoney, double balance)
+        public Bank (string initialdepo, int acnumber, double balance)
         {
-            _name = name;
-            _initialmoney = initialMoney;
+            InitialName = initialdepo;
             AcNumber = acnumber;
             Balance = balance;
         }
@@ -36,22 +35,32 @@
             }
         }   
         
-        public string InitialMoney
+        public string InitialDepo(string initialdepo)
         {
-            get { return _initialmoney; }
-            set
+            if (initialdepo.Equals("s") || initialdepo.Equals("n"))
             {
-                while (_initialmoney.ToLower() != "s" || _initialmoney.ToLower() != "n") {
-                    Console.WriteLine("Informe se deseja realizar depósito inicial!");
+                return initialdepo;
+            } else
+            {
+                while (!initialdepo.Equals("s", StringComparison.OrdinalIgnoreCase) || !initialdepo.Equals("n", StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Will there be an initial deposit? S / N");
+                    initialdepo = Console.ReadLine();
+
+                    return initialdepo;
                 }
             }
+            
+
+            return initialdepo;
         }
-    
-        private double AccountOperation (double balance)
+
+
+        public override string ToString()
         {
-            return balance;
-        } 
-    
+            return "Account: " + AcNumber + " Name: " + Name + " Balance: R$" + Balance;
+        }
+
 
     }
 }

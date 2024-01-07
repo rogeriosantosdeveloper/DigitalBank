@@ -1,0 +1,15 @@
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\bin\Debug\net8.0\DigitalBank.exe
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\bin\Debug\net8.0\DigitalBank.deps.json
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\bin\Debug\net8.0\DigitalBank.runtimeconfig.json
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\bin\Debug\net8.0\DigitalBank.dll
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\bin\Debug\net8.0\DigitalBank.pdb
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\obj\Debug\net8.0\DigitalBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\obj\Debug\net8.0\DigitalBank.AssemblyInfoInputs.cache
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\obj\Debug\net8.0\DigitalBank.AssemblyInfo.cs
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\obj\Debug\net8.0\DigitalBank.csproj.CoreCompileInputs.cache
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\obj\Debug\net8.0\DigitalBank.sourcelink.json
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\obj\Debug\net8.0\DigitalBank.dll
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\obj\Debug\net8.0\refint\DigitalBank.dll
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\obj\Debug\net8.0\DigitalBank.pdb
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\obj\Debug\net8.0\DigitalBank.genruntimeconfig.cache
+C:\Users\Rogerio\Documents\PROGRAMMING\DigitalBank\DigitalBank\obj\Debug\net8.0\ref\DigitalBank.dll
