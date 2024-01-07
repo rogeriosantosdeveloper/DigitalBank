@@ -13,7 +13,7 @@
             Console.WriteLine("Will there be an initial deposit? S / N");
             string initialDepo = Console.ReadLine().ToLower();
 
-            Bank bank = new Bank();
+            Bank bank = new Bank(acNumber, name);
 
             bank.InitialMoney(initialDepo);
 
