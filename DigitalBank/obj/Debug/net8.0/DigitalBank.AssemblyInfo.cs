@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigitalBank")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55e67f6c6c8af9ab6a597377ba859d75b4e6f597")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dd38c02e58dcfc9c146cccb5832b25c558ecae1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DigitalBank")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigitalBank")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
