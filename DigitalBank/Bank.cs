@@ -2,13 +2,11 @@
 {
     internal class Bank
     {
-        private string _name;
-        public string InitialName { get; }
-        public int AcNumber {  get; set; }
-        public double Balance { get; set; }
+        public int AcNumber {  get; private set; }
+        public double Balance { get; private set; }
 
         private string ResponseDepo;
-
+        private string _name;
         private const int FixedFee = 5;
 
 
@@ -17,11 +15,10 @@
 
         }
 
-        public Bank (string initialdepo, int acnumber, double balance)
+        public Bank (int acnumber, string name)
         {
-            InitialName = initialdepo;
             AcNumber = acnumber;
-            Balance = balance;
+            _name = name;
         }
 
         public string Name
@@ -66,7 +63,7 @@
                 Console.WriteLine("Enter the value for deposit: ");
                 Balance = double.Parse(Console.ReadLine());
                 
-                if (Balance < 1)
+                while(Balance <= 0)
                 {
                     Console.WriteLine("Enter the positive or more than 0 value for deposit: ");
                     Balance = double.Parse(Console.ReadLine());
@@ -80,17 +77,29 @@
 
         public double Deposit (double deposit)
         {
+            while (deposit <= 0)
+            {
+                Console.WriteLine("Enter the positive or more than 0 value for deposit: ");
+                deposit = double.Parse(Console.ReadLine());
+            }
             return Balance += deposit;
         }
 
         public double Withdrawal (double withdrawal)
         {
-            return Balance = (Balance - withdrawal) - FixedFee;
+            Balance -= FixedFee;
+            while (withdrawal > Balance)
+            {
+                Console.WriteLine("The amount exceeds the balance in the account. Please provide a smaller value: ");
+                withdrawal = double.Parse(Console.ReadLine());
+            }
+            Balance -= withdrawal;
+            return Balance;
         }
 
         public override string ToString()
         {
-            return "Account: " + AcNumber + " Name: " + _name + " Balance: R$" + Balance;
+            return "Account: " + AcNumber + " Name: " + _name + " Balance: R$" + Balance.ToString("F2");
         }
 
 

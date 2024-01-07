@@ -4,18 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Bank bank = new Bank();
-
             Console.WriteLine("Insert the account number: ");
             int acNumber = int.Parse(Console.ReadLine());
-            bank.AcNumber = acNumber;
-
+            
             Console.WriteLine("Insert your name: ");
-            bank.Name = Console.ReadLine();
+            string name = Console.ReadLine();
 
             Console.WriteLine("Will there be an initial deposit? S / N");
             string initialDepo = Console.ReadLine().ToLower();
-            bank.InitialDepo(initialDepo);
+
+            Bank bank = new Bank();
 
             bank.InitialMoney(initialDepo);
 
