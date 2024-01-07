@@ -10,34 +10,34 @@
             Console.WriteLine("Insert your name: ");
             string name = Console.ReadLine();
 
-            Bank bank = new Bank(acNumber, name);
+            Account account = new Account(acNumber, name);
 
             Console.WriteLine("Will there be an initial deposit? S / N");
             string initialDepo = Console.ReadLine().ToLower();
-            bank.InitialDepo(initialDepo);
+            account.InitialDepo(initialDepo);
 
-            bank.InitialMoney(initialDepo);
+            account.InitialMoney(initialDepo);
 
-            Console.WriteLine(bank);
+            Console.WriteLine(account);
             Console.WriteLine();
 
             Console.WriteLine("Enter the value for deposit");
             double deposit = double.Parse(Console.ReadLine());
-            bank.Deposit(deposit);
+            account.Deposit(deposit);
             Console.WriteLine();
 
 
             Console.WriteLine("Account data updated: ");
-            Console.WriteLine(bank);
+            Console.WriteLine(account);
             Console.WriteLine();
 
             Console.WriteLine("Enter the value for withdraw");
             double withdraw = double.Parse(Console.ReadLine());
-            bank.Withdrawal(withdraw);
+            account.Withdrawal(withdraw);
             Console.WriteLine();
 
             Console.WriteLine("Account data updated: ");
-            Console.WriteLine(bank);
+            Console.WriteLine(account);
             Console.WriteLine();
         }
     }

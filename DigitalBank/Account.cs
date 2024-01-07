@@ -1,6 +1,6 @@
 ﻿namespace DigitalBank
 {
-    internal class Bank
+    internal class Account
     {
         public int AcNumber {  get; private set; }
         public double Balance { get; private set; }
@@ -10,12 +10,12 @@
         private const int FixedFee = 5;
 
 
-        public Bank()
+        public Account()
         {
 
         }
 
-        public Bank (int acnumber, string name)
+        public Account (int acnumber, string name)
         {
             AcNumber = acnumber;
             _name = name;
@@ -98,7 +98,5 @@
         {
             return "Account: " + AcNumber + " Name: " + _name + " Balance: R$" + Balance.ToString("F2");
         }
-
-
     }
 }
