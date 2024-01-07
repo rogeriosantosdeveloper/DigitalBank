@@ -43,15 +43,12 @@
             }
             else
             {
-                while (!initialdepo.Equals("s") || !initialdepo.Equals("n"))
+                while (!initialdepo.Equals("s") && !initialdepo.Equals("n"))
                 {
                     Console.WriteLine("Will there be an initial deposit? S / N");
                     initialdepo = Console.ReadLine();
-
-                    if (initialdepo.Equals("s") || initialdepo.Equals("n")) {
-                        InitialMoney(initialdepo); break;
-                    }
                 }
+                InitialMoney(initialdepo);
             }
             return initialdepo;
         }

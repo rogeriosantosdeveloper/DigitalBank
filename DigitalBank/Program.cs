@@ -10,10 +10,11 @@
             Console.WriteLine("Insert your name: ");
             string name = Console.ReadLine();
 
+            Bank bank = new Bank(acNumber, name);
+
             Console.WriteLine("Will there be an initial deposit? S / N");
             string initialDepo = Console.ReadLine().ToLower();
-
-            Bank bank = new Bank(acNumber, name);
+            bank.InitialDepo(initialDepo);
 
             bank.InitialMoney(initialDepo);
 
