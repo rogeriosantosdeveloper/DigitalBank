@@ -1,4 +1,6 @@
-﻿namespace DigitalBank
+﻿using System.Security.Principal;
+
+namespace DigitalBank
 {
     class Program
     {
@@ -10,35 +12,7 @@
             Console.WriteLine("Insert your name: ");
             string name = Console.ReadLine();
 
-            Account account = new Account(acNumber, name);
-
-            Console.WriteLine("Will there be an initial deposit? S / N");
-            string initialDepo = Console.ReadLine().ToLower();
-            account.InitialDepo(initialDepo);
-
-            account.InitialMoney(initialDepo);
-
-            Console.WriteLine(account);
-            Console.WriteLine();
-
-            Console.WriteLine("Enter the value for deposit");
-            double deposit = double.Parse(Console.ReadLine());
-            account.Deposit(deposit);
-            Console.WriteLine();
-
-
-            Console.WriteLine("Account data updated: ");
-            Console.WriteLine(account);
-            Console.WriteLine();
-
-            Console.WriteLine("Enter the value for withdraw");
-            double withdraw = double.Parse(Console.ReadLine());
-            account.Withdrawal(withdraw);
-            Console.WriteLine();
-
-            Console.WriteLine("Account data updated: ");
-            Console.WriteLine(account);
-            Console.WriteLine();
+            new AccountService(new Account(acNumber, name)).init();
         }
     }
 }
